@@ -9,11 +9,11 @@ Usage
 
 Usage is fairly simple: 
 
-Create a modal with a toggle button as usual, but specify `modal-map` on the button's data-toggle attribute. 
+Create a modal with a toggle button as usual, but specify `modal-map` on the button's data-toggle attribute as well as `latitude`-, `longitude`- and `title`-options. 
 
 ```html
 <!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal-map" data-target="#myModal">
+<button class="btn btn-primary btn-lg" data-toggle="modal-map" data-target="#myModal" data-latitude="51.9817" data-longitude="9.255" data-title="Bad Pyrmont am Rhein">
   Launch demo modal
 </button>
 

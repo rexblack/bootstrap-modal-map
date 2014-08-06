@@ -16,12 +16,26 @@ module.exports = function(grunt) {
           'dist/bootstrap.modalMap.min.js': [ 'dist/bootstrap.modalMap.js']
         }
       }
+    }, 
+    jekyll_docs: {
+      build: {
+        dest: 'docs', 
+        cwd: 'src', 
+        expand: true,  
+        src: [
+          'http://maps.googleapis.com/maps/api/js?sensor=false', 
+          '../README.md', 
+          '**/*.{md,js,css}' 
+        ]
+      }
     }
   });
   
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-jekyll-docs');
 
   grunt.registerTask('default', ['copy', 'uglify']);
-
+  grunt.registerTask('docs', ['jekyll_docs']);
+  
 };
