@@ -38,8 +38,7 @@
       var $modalTitle = this.$element.find(".modal-title");
       $modalTitle.html(options.title);
       
-      
-      $modalBody.innerHTML = "";
+      $modalBody.html("");
       if (!$mapElement) {
         this.$mapElement = $mapElement = $('<div class="modal-map-element"></div>');
       };

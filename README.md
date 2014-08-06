@@ -13,7 +13,7 @@ Create a modal with a toggle button as usual, but specify `modal-map` on the but
 
 ```html
 <!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal-map" data-target="#myModal" data-latitude="51.9817" data-longitude="9.255" data-title="Bad Pyrmont am Rhein">
+<button class="btn btn-primary btn-lg" data-toggle="modal-map" data-target="#myModal" data-latitude="51.9817" data-longitude="9.255" data-title="Bad Pyrmont">
   Launch demo modal
 </button>
 
@@ -26,11 +26,9 @@ Create a modal with a toggle button as usual, but specify `modal-map` on the but
         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        ...
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>

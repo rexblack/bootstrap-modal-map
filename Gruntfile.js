@@ -23,7 +23,6 @@ module.exports = function(grunt) {
         cwd: 'src', 
         expand: true,  
         src: [
-          'http://maps.googleapis.com/maps/api/js?sensor=false', 
           '../README.md', 
           '**/*.{md,js,css}' 
         ]
